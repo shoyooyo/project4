@@ -11,7 +11,7 @@ services:
                         context: ./nginx
                 ports:
                         - '3050:80'
-        server:
+        ai:
                 build:
                         dockerfile: Dockerfile.dev
                         context: ./server
