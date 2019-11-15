@@ -12,4 +12,10 @@ after_success:
         - docker build -t shoyooyo/project3nginx -f ./nginx
         - docker build -t shoyooyo/project3server -f ./server
         - docker build -t shoyooyo/project3worker -f ./worker
-
+          # code to login to docker
+        - echo "$DOCKER_PASS" | sudo docker login -u "$DOCKER_ID" --password-stdin
+          # code to push docker image
+        - docker push shoyooyo/project3prod
+        - docker push shoyooyo/project3nginx
+        - docker push shoyooyo/project3server
+        - docker push shoyooyo/project3worker
