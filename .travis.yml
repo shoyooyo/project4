@@ -4,9 +4,11 @@ services:
 
 before_install:
         - docker build -t shoyooyo/project3test -f ./client/Dockerfile.dev ./client
-
 script:
-        - docker build -t shoyooyo/project3
+        - docker run -e CI=true shoyooyo/react-test npm test
+
+          #script:
+          #        - docker build -t shoyooyo/project3
 after_success:
         - docker build -t shoyooyo/project3prod -f ./client
         - docker build -t shoyooyo/project3nginx -f ./nginx
