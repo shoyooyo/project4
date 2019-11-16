@@ -5,7 +5,7 @@ services:
 before_install:
         - docker build -t shoyooyo/project3test -f ./client/Dockerfile.dev ./client
 script:
-        - docker run -e CI=true shoyooyo/react-test npm test
+        - docker run -e CI=true shoyooyo/project3test npm test
 
           #script:
           #        - docker build -t shoyooyo/project3
