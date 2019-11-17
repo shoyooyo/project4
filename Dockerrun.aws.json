@@ -1,0 +1,37 @@
+{
+	"AWSEBDockerrunVersion": 2,
+	"containerDefinitions": [
+		{
+			"name": "client",
+			"image": "shoyooyo/project3prod",
+			"hostname": "client",
+			"essential": false
+		},
+		{
+			"name": "server",
+			"image": "shoyooyo/project3server",
+			"hostname": "api",
+			"essential": false
+		},
+		{
+			"name": "worker",
+                        "image": "shoyooyo/project3worker",
+                        "hostname": "worker",
+                        "essential": false
+		},
+		{
+			"name": "nginx",
+			"image": "shoyooyo/project3nginx",
+			"hostname": "nginx",
+			"essential": true,
+			"portMappings": [
+				{
+					"hostPort": 80,
+					"containerPort": 80
+				}
+			],
+			"links": ["client", "server"]
+		}
+
+	]
+}
