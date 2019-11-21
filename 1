@@ -19,7 +19,7 @@ after_success:
           #        - echo "$DOCKER_PASS" | docker login -u "$DOCKER_ID" --password-stdin
           #        - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
           # code to push docker image
-        - docker push "$DOCKER_ID"/project4prod
+        - docker push "$DOCKER_ID"/projectprod
         - docker push "$DOCKER_ID"/project4nginx
         - docker push "$DOCKER_ID"/project4server
         - docker push "$DOCKER_ID"/project4worker

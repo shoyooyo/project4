@@ -3,25 +3,25 @@
 	"containerDefinitions": [
 		{
 			"name": "client",
-			"image": "shoyooyo/project3prod",
+			"image": "shoyooyo/project4prod",
 			"hostname": "client",
 			"essential": false
 		},
 		{
 			"name": "server",
-			"image": "shoyooyo/project3server",
+			"image": "shoyooyo/project4server",
 			"hostname": "api",
 			"essential": false
 		},
 		{
 			"name": "worker",
-                        "image": "shoyooyo/project3worker",
+                        "image": "shoyooyo/project4worker",
                         "hostname": "worker",
                         "essential": false
 		},
 		{
 			"name": "nginx",
-			"image": "shoyooyo/project3nginx",
+			"image": "shoyooyo/project4nginx",
 			"hostname": "nginx",
 			"essential": true,
 			"portMappings": [
