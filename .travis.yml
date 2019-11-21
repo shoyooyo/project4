@@ -27,10 +27,10 @@ deploy:
         edge: true
         provider: elasticbeanstalk
         region: us-east-2
-        app: 
-        env:
-        bucket_name:
-        bucket_path:
+        app: multi-services-project-4 
+        env: MultiServicesProject4-env
+        bucket_name: elasticbeanstalk-us-east-2-279578293836
+        bucket_path: multi-project4
         on:
                 branch: master
         access_key_id: $AWS_ACCESS_KEY
