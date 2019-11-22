@@ -24,7 +24,7 @@
 		},
 		{
             		"name": "nginx",
-            		"image": "shoyooyo/multi-nginx",
+            		"image": "shoyooyo/project4nginx",
 		        "hostname": "nginx",
        			"essential": true,
             		"portMappings": [
