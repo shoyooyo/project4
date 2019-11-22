@@ -24,7 +24,7 @@ after_success:
         - docker push "$DOCKER_ID"/project4server
         - docker push "$DOCKER_ID"/project4worker
 deploy:
-        edge: true
+        #edge: true
         provider: elasticbeanstalk
         region: us-east-2
         app: multi-services-project-4

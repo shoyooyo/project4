@@ -23,19 +23,19 @@
 			"memory": 128
 		},
 		{
-			"name": "nginx",
-			"image": "shoyooyo/project4nginx",
-			"hostname": "nginx",
-			"essential": true,
-			"portMappings": [
-				{
-					"hostPort": 80,
-					"containerPort": 80
-				}
-			],
-			"links": ["client", "server"],
-			"memory": 128
-		}
+            		"name": "nginx",
+            		"image": "shoyooyo/multi-nginx",
+		        "hostname": "nginx",
+       			"essential": true,
+            		"portMappings": [
+                		{
+                    			"hostPort": 80,
+                    			"containerPort": 80
+                		}
+            		],
+            		"links": ["client", "server"],
+            		"memory": 128
+        	}
 
 	]
 }
