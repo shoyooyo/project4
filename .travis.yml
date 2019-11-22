@@ -28,7 +28,7 @@ deploy:
         provider: elasticbeanstalk
         region: us-east-2
         app: multi-services-project-4
-        env: MMultiServicesProject4-env
+        env: MultiServicesProject4-env
         bucket_name: elasticbeanstalk-us-east-2-279578293836
         bucket_path: multi-project4
         on:
